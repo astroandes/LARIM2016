@@ -1,38 +1,54 @@
 \documentclass[proceedings]{rmaa}
 
-% a command to specify possible linebreak points in an email address 
+% a command to specify possible linebreak points in an email address
 \newcommand{\D}{\discretionary{}{}{}}
+\newcommand{\hMsun}{{\ifmmode{h^{-1}{\rm {M_{\odot}}}}\else{$h^{-1}{\rm{M_{\odot}}}$}\fi}}
 
 \begin{document}
 \begin{abstracts}[Abstract only]
 
-  \title{An Example Abstract for the RMAA Conference Series}
-  
-  \author{W. J. Henney\altaffilmark{1,2} and A. Busy Person\altaffilmark{3}}
+  \title{Halo concentration via the integrated mass profile}
 
-  \altaffiltext{1}{Centro de Radioastronom\'\i{}a y Astrof\'\i{}sica,
-    Universidad Nacional Aut\'onoma de M\'exico, Campus Morelia,
-    Apartado Postal 3--72, 58090 Morelia, Michoac\'an, M\'exico
-    (w.henney\D{}@astrosmo.\D{}unam.\D{}mx).}
+  \author{C. N. Poveda-Ruiz\altaffilmark{1}, J. E. Forero-Romero\altaffilmark{1} and J. C. Mu\~noz-Cuartas\altaffilmark{2}}
 
-  \altaffiltext{2}{Please note that affiliations end in periods.}
+  \altaffiltext{1}{Departamento de F\'{i}sica, Universidad de los Andes, Cra. 1
+  No. 18A-10, Edificio Ip, Bogot\'a, Colombia.}
 
-  \altaffiltext{3}{Some other institution.}
+  \altaffiltext{2}{Instituto de F\'{\i}sica - FCEN, Universidad de Antioquia, Calle
+  67 No. 53-108, Medell\'{\i}n, Colombia.}
 
   % List of authors used to construct table of contents
-  \listofauthors{W. J. Henney \& A. Busy Person}
+  \listofauthors{C. N. Poveda-Ruiz  \& J. E. Forero-Romero \& J. C. Mu\~noz-Cuartas}
   % Each author in Surname, Initials format, used in generating Author
   % Index entries.
-  \indexauthor{Henney, W. J.}
-  \indexauthor{Busy Person, A.}
+  \indexauthor{Poveda-Ruiz, C. N.}
+  \indexauthor{Forero-Romero, J. E.}
+  \indexauthor{Mu\~noz-Cuartas, J. C.}
 
-  \abstract{ This abstract summarizes our oral or poster contribution
-    to the conference. We would obviously have liked to have written
-    up our results in more detail but we are far too busy doing
-    science/teaching/having a good time. The abstract should not
-    exceed 500 words, including the title, author list, and
-    addresses. This corresponds to about half the length of a column
-    on the page.  }
+  \abstract{
+  We present a new algorithm to estimate the concentration of N-body
+  dark matter halos using the integrated mass profile.
+  The method uses the full particle information without any binning,
+  making it reliable in cases when low numerical resolution becomes a
+  limitation for other methods.
+  We test the performance of this method by estimating halo
+  concentration both on mock and N-body halos.
+  We compare these results against two other methods:
+  maximum radial velocity measurements and radial particle binning.
+  Tests on the mock halos show that the accuracy of the new method to
+  recover known input concentrations varies with halo resolution,
+  outperforming the other two methods.
+  We also measure the mass-concentration relationship on N-body
+  data.
+  We find that in the probed mass range ($10^{12}\hMsun <
+  10^{14}\hMsun$) the three methods give consistent results within the
+  statistical uncertainties.
+  We only find a small deviation at low masses, $M<10^{13}\hMsun$, where
+  the new method yields lower median concentration values by $20\%-30\%$
+  compared to the velocity and density methods.
+  From these results we believe that the new method is a promising tool
+  to probe the internal structure of dark matter halos.
+  }
 
 \end{abstracts}
 \end{document}
