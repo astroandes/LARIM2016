@@ -6,24 +6,39 @@
 \begin{document}
 \begin{abstracts}[Abstract only]
 
-  \title{Finding filamentary structures on Sun's chromosphere}
+  \title{A new algorithm to decribe granularity on the Sun's chromosphere}
   
-  \author{J. E. Forero-Romero\altaffilmark{1} and N. Rocha-Pacheco\altaffilmark{2}}
+  \author{
+    N. Rocha-Pacheco\altaffilmark{1,2} and
+    J. E. Forero-Romero\altaffilmark{1}}
 
-  \altaffiltext{1}{Departamento de F\'isica, Universidad de los Andes, Cra. 1 No. 18A-10, 
-		Edificio Ip, Bogot\'a, Colombia \\ (je.forero\D{}@uniandes.\D{}edu.\D{}co).}
-
-  \altaffiltext{2}{Departamento de F\'isica, Universidad de los Andes, Cra. 1 No. 18A-10, 
-		Edificio Ip, Bogot\'a, Colombia \\ (n.rocha11\D{}@uniandes.\D{}edu.\D{}co).}
+    \altaffiltext{1}{Departamento de F\'isica, Universidad de los Andes,
+      Cra. 1 No. 18A-10, Edificio Ip, Bogot\'a, Colombia.}
+    \altaffiltext{2}{n.rocha11\D{}@uniandes.\D{}edu.\D{}co}
 
   % List of authors used to construct table of contents
-  \listofauthors{J. E. Forero-Romero \& N. Rocha-Pacheco}
+  \listofauthors{N. Rocha-Pacheco, J. E. Forero-Romero} 
   % Each author in Surname, Initials format, used in generating Author
   % Index entries.
-  \indexauthor{Forero-Romero, J. E.}
   \indexauthor{Rocha-Pacheco, N.}
+  \indexauthor{Forero-Romero, J. E.}
 
-  \abstract{ Since 1960, Sun's chromosphere has been an intersting topic on physics research. As we get stunning images from           our Sun we need to find out a way to analyze them. We have been working on an algorithm previously developed by            Professor Forero in order to use it on finding filamentary structures on Sun's chromosphere in an autonomous ways.         Using eigenvalues and second-order derivatives we were able to follow filamentary structures on an image provided          by Big Bear Solar Observatory. Our next step is to use simulations of Sun's chromosphere to do some test on the            algorithm as we improve it, also, we will test it with more images from Sun's chromosphere. This automatic system          could help on understanding Sun's chromosphere and it's relationship with solar magnetic field.}
 
+  \abstract{ 
+    Since 1960 the Sun's chromosphere has been an active
+    topic on astrophysical research. 
+    As we get more detailed images from the Sun we need new and different 
+    ways to analyze them and extract morphological information.
+    This information can help us to characterize the physical process
+    at work driving the chromosphere's granularity.
+    Here we present a new algorithm to detect and characterize the 
+    granular struture on the Sun's chromosphere.
+    The algorithm is based on the Hessian of an image's intensity.
+    This allows us to follow and describe filamentary structures both
+    in observations and simulations.  
+    This way of characterizing the granular structure on the
+    Sun provides a new machine learning tool to characterize the
+    Sun's chromosphere and understand its relationship to its internal
+    physical processes. }
 \end{abstracts}
 \end{document}
