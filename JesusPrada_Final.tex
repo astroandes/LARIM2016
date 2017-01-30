@@ -36,8 +36,6 @@
   Space Sciences Building, Cornell University, Ithaca, NY
   14853, USA.}
 
-
-
   % List of authors used to construct table of contents
   \listofauthors{Jesus Prada, Michael G. Jones, J. E. Forero-Romero and Martha P. Haynes}
   % Each author in Surname, Initials format, used in generating Author
@@ -88,11 +86,11 @@ We aim at quantifying the differences in the Schecter parameters as a
 function of environemtn.
 
 The first environment definition is a computational
-adaptation of the fourth nearest neighbour method used \citet{Jones}
-in their observational study. 
+adaptation of the fourth nearest neighbour method used 
+in an observational study of HI galaxies \citep{Jones}. 
 We classify galaxies in four quartiles according to this environment
 definition and obtained the mass and Schechter functions for each
-one. Figure \ref{fig1} show our results, the environments are ordered
+one. Figure \ref{fig1} shows our results, the environments are ordered
 from top to bottom.
 
 
@@ -105,24 +103,37 @@ from top to bottom.
 \centering
 \end{figure}
 
-The second definition of environment is of computational nature which was proposed by Forero et al. It takes the density field of the simulation to calculate the Hessian of the gravitational potential and according to this, it classifies the morphology of potential wells in four environments: voids, filaments, sheets and clusters. The result of the Schechter functions for these environments are shown in \ref{fig2}, where environments are shown in crescent order of density from top to bottom.
+The second definition of environment is based 
+the Hessian of the gravitational potential \citep{Forero}, or
+the Tidal Tensor.
+This method classifies the environment according to the number of
+eigenvalues of this tensor which are larger than a given threshod. 
+The classification is done into voids, filaments, sheets and
+clusters. 
+Figure \ref{fig2} shows the results for this environment
+classification.
+
 
 \begin{figure}[h!]
 \centering
 \includegraphics[width=0.5\textwidth]{environment2}
 \label{fig2}
 \caption{Mass functions with the environment defined from the Tidal
-  web classification method.}
+  Tensor web classification method.}
 \centering
 \end{figure}
 
- With some analysis of errors of the Schechter fits it is demonstrated that the effect of environment is clear for the knee-mass, while for the faint-end slope, the variation is so subtle to make conclusions with this methods. This is in accordance with the study by Jones et al. \\
+ Taking into account the uncertainty on the the Schechter parameters
+ we find  that the environment has an impact on the knee-mass,
+ while for the faint-end slope we cannot find any change.
+ This result is in agreement with the observational study by
+\citealp{Jones}.
 
-\bibliographystyle{rmaa} 
+
 \begin{thebibliography}
-\bibitem[Jones et al. 2016]{Jones}M. G. Jones, E. Papastergis, M. P. Haynes, and R. Giovanelli. Environmental dependence of the H I mass function in the ALFALFA 70\% catalogue. MNRAS, 457:4393–4405, April 2016.
-\bibitem[Forero-Romero et al. 2009]{Forero}J. E. Forero-Romero, Y. Hoffman, S. Gottloeber, A. Klypin, and G. Yepes. A dynamical classification of the cosmic web. MNRAS, 396:1815–1824, July 2009.
-\bibitem[Vogelsberger et al. 2014]{Vogelsberger}{Vogelsberger}, M., {Genel}, S.,
+\bibitem[Jones et al. 2016]{Jones} M. G. Jones, E. Papastergis, M. P. Haynes, and R. Giovanelli. Environmental dependence of the H I mass function in the ALFALFA 70\% catalogue. MNRAS, 457:4393–4405, April 2016.
+\bibitem[Forero-Romero et al. 2009]{Forero} J. E. Forero-Romero, Y. Hoffman, S. Gottloeber, A. Klypin, and G. Yepes. A dynamical classification of the cosmic web. MNRAS, 396:1815–1824, July 2009.
+\bibitem[Vogelsberger et al. 2014]{Vogelsberger}Vogelsberger, M., {Genel}, S.,
   {Springel}, V., {Torrey}, P.,  {Sijacki}, D., {Xu}, D.,
   {Snyder}, G., {Nelson}, D., {Hernquist}, L.. Introducing the
   Illustris Project: simulating the coevolution of dark and visible
