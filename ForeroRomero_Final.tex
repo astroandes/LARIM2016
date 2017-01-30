@@ -57,62 +57,91 @@
 \maketitle 
 %%%Resumen en Español%%%
 \boldabstract{
-  This talk summarized different algorithms that can be used
-  to trace the cosmic web both in simulations and observations.
-  I showed different applications in galaxy formation and cosmology.
-  To finalize, I showed how the Dark Energy Spectroscopic
-  Instrument (DESI) could benefit from these techniques.
+  En esta presentaci\'on resumimos diferentes algoritmos que pueden 
+  ser utilizados para trazar la red c\'osmica en observaciones y
+  simulaciones.
+  Resumimos diferentes aplicaciones en formaci\'on de galaxias y
+  cosmolog\'ia, para terminar mostrando como el Dark Energy
+  Spectroscopic Instrument (DESI) podr\'ia ser un buen lugar para
+  aplicar estas t\'ecnicas.
 }
 
 %%%Abstract%%%
 
 \boldabstract{
-  This talk summarized different algorithms that can be used
+  This talk summarizes different algorithms that can be used
   to trace the cosmic web both in simulations and observations.
-  I showed different applications in galaxy formation and cosmology.
-  To finalize, I showed how the Dark Energy Spectroscopic
-  Instrument (DESI) could benefit from these techniques.
+  We present different applications in galaxy formation and cosmology.
+  To finalize, we show how the Dark Energy Spectroscopic
+  Instrument (DESI) could be a good place to apply these techniques. 
 }
 
-The cosmic web is one of the most conspicous features of the
+The cosmic web is one of the most conspicuous features of the
 large-scale structure of the Universe. 
+We describe in the following paragraphs some of its most important
+applications in studies of galaxy formation and cosmology.
 
-{\bf The method}
+{\bf Finding the Cosmic Web}. We mainly use an algorithm based on the Hessian
+of the gravitational potential (also known as Tidal tensor) to define the cosmic web. 
+This symmetric tensor can be diagonalized to find its eigenvalues. 
+Depending on the number of eigenvalues (0,1,2,3) above a certain threshold we
+can classify a place in the cosmic web as one of the following types:
+peak, sheet, filament, void. This algorithm has been applied to
+simulations (Forero-Romero et al. 2009) and also dark matter fields
+reconstructed from observations (Munoz-Cuartas et al. 2011). 
 
-{\bf Halo Alignments with the Cosmic Web}. 
 
-{\bf The Local Group in the Cosmic Web}.\\
+{\bf Halo Alignments with the Cosmic Web}.
+The cosmic web also shows a strong correlation with the shape, angular
+momentum and peculiar velocities of dark matter halos. Forero-Romero
+et al. 2014 showed this over five orders of magnitude in halo mass
+$10^9$-$10^{14}$ M$_{\odot}$. The strongest alignments were present
+for the halo shape above a threshold mass of $10^{12}$
+M$_{\odot}$. Below this mass all alignments presented a weak signal. 
+This study is useful to quantify the degree of contamination in
+weak lensing studies (due to intrinsic alignments) and also to
+understand the strong alignments observed for the satellites in the
+Local Group (Forero-Romero \& Gonz\'alez 2015). 
 
 {\bf Constraining Cosmological Parameters}. Using the cosmic web, 
-prposed a method based on the redshift dependence of the
-Alcock-Paczynski (AP) test to constrain cosmological parameters (Li et
-al. 2014). 
+Li et al. (2014), proposed a method based on the redshift dependence of the
+Alcock-Paczynski (AP) test to constrain cosmological parameters.
 The method uses the fact that the galaxy density gradient field should
-look isotropic as a function of redshift. That is, the filaments in
-the cosmic web, should not have a prefered direction in comoving coordinates. Any radial or
+be isotropic as a function of redshift. That is, the filaments in
+the cosmic web should not have a preferred direction in comoving coordinates. Any radial or
 tangential anisotropy can only be produced by using the incorrect
-cosmological parameters to translate the observed redshifts into
+cosmological parameters to translate observed redshifts into
 comoving coordinates.
 
 
 {\bf Future Surveys}. The Dark Energy Spectroscopic Instrument (DESI) (DESI Collaboration
 2016) is a ground based dark
-energy experiment that will study Barion Acoustic Oscillations (BAO). 
+energy experiment that will study Baryon Acoustic Oscillations (BAO). 
 It will measure more than 30 million galaxy and quasar redshifts in
 the redshift range $1.0<z<3.5$ to measure the BAO feature.
 Additionally, DESI will conduct a magnitude-limit survey with a median
-redshift of $0.2$ comprising approximately 10 million galaxies, which
-will provide an excellent oppportunity to extend the cosmic web
+redshift of $z\approx 0.2$ comprising approximately 10 million galaxies, which
+will provide an excellent opportunity to extend the cosmic web
 studies presented so far.
 
 
 
 \begin{thebibliography}
 
- 
-\bibitem{1} J. E. Forero-Romero, Y. Hoffman, S. Gottloeber, A. Klypin, and G. Yepes. A dynamical classification of the cosmic web. MNRAS, 396:1815–1824, July 2009.
 \bibitem{2} DESI Collaboration. The DESI Experiment Part I:
-  Science,Targeting, and Survey Design. arxiv:1611.00036, November 2016.  
+  Science, Targeting, and Survey Design. arxiv:1611.00036, November 2016.  
+ \bibitem{1} J. E. Forero-Romero, Y. Hoffman, S. Gottloeber, A. Klypin,
+  and G. Yepes. A dynamical classification of the cosmic web. MNRAS,
+  396:1815-1824, July 2009. 
+\bibitem{5} J. C., {Mu{\~n}oz-Cuartas}, V. {M{\"u}ller},
+  J. E. {Forero-Romero}. Halo-based reconstruction of the cosmic mass
+  density field. MNRAS, 417, 1303-1317, October 2011.
+\bibitem{4} J. E. {Forero-Romero}, S. {Contreras}, N. {Padilla}.
+  {Cosmic web alignments with the shape, angular momentum
+  and peculiar velocities of dark matter haloes}. MNRAS, 443,
+  1090-1102, September 2014.
+\bibitem{6} J. E. {Forero-Romero}, R. {Gonz{\'a}lez}. {The Local Group
+  in the Cosmic Web}. ApJ, 799, 45, January 2015.
 \bibitem{3} X. D. {Li}, C. {Park}, J.E. {Forero-Romero}, J. {Kim}.
   {Cosmological Constraints from the Redshift Dependence of
   the Alcock-Paczynski Test: Galaxy Density Gradient Field},
