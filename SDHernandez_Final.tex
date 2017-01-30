@@ -47,10 +47,9 @@
 % No \abstract or \resumen for poster papers
 
 % Keywords must be from the standard list and in alphabetical order. 
-\addkeyword{H~II regions}
-\addkeyword{ISM: Jets and outflows}
-\addkeyword{Stars: Pre-main sequence}
-\addkeyword{Stars: Mass loss}
+\addkeyword{cosmology: theory}
+\addkeyword{cosmology: large-scale structure of the universe}
+
 
 %%%
 %%% Beginning of document proper
@@ -59,33 +58,35 @@
 % Typeset article header
 \maketitle 
 %%%Resumen en Español%%%
-\boldabstract{A partir de observaciones del flujo c\'{o}smico
-local se ha definido nuestro superc\'{u}mulo local, Laniakea. En este trabajo presentamos
-un estudio sobre simulaciones de N-cuerpos con el fin de establecer la significancia de
-Laniakea en un contexto cosmol\'{o}gico. 
-Encontramos que superc\'{u}mulos similares en tama\~{n}o y estructura a Laniakea son
-poco comunes en un contexto cosmol\'{o}gico amplio.}
+\boldabstract{Laniakea, nuestro superc\'{u}mulo local,
+  fue definido a partir de observaciones recientes flujos c\'{o}smicos.
+En este trabajo presentamos un estudio sobre simulaciones de N-cuerpos
+con el fin de establecer la significancia de Laniakea en un contexto
+cosmol\'{o}gico.  
+Encontramos que superc\'{u}mulos similares en tama\~{n}o y estructura
+a Laniakea son poco comunes en un contexto cosmol\'{o}gico amplio.} 
 
 %%%Abstract%%%
 
-\boldabstract{Recent observations used local cosmic flow information to
-    define our local supercluster, Laniakea. 
-    In this work we present a study on large cosmological N-body
-    simulations aimed at establishing the significance of Laniakea in a
-    cosmological context.
-    We find that superclusters similar in size and structure to Laniakea are
-    relatively uncommon on a broader cosmological context.}
+\boldabstract{Laniakea, our local supercluster, 
+  was defined by recent observationa of the local cosmic flow.
+  In this work we present a study on large cosmological N-body
+  simulations aimed at establishing the significance of Laniakea in a
+  cosmological context.
+  We find that superclusters similar in size and structure to Laniakea are
+  relatively uncommon on a broader cosmological context.}
 
-Tully et al. defined our home supercluster, Laniakea, as the region where the peculiar
-velocity flows converge. Laniakea is found to be contained in a 160 Mpc/h diameter
-sphere containing a very dense region called the Great Attractor.
+Tully et al. (2014) defined our home supercluster, Laniakea, as a region
+region where the peculiar velocity flows converge. Laniakea is found
+to be contained in a 160 Mpc diameter sphere.
 
-We designed a method to find superclusters in dark matter N-body simulations and tested
-our method in a simulation of boxsize 250 Mpc/h. We based our method on the analysis of
-the eigenvalues $\lambda_1$, $\lambda_2$ and
- $\lambda_3$ of the velocity shear tensor $\Sigma _{\alpha\beta} = -\frac{1}{2 H_0} \left( \frac{\partial v_{\alpha}}{\partial
+We use a method to find superclusters in dark matter N-body
+simulations and test it in a simulation of boxsize 350 Mpc. 
+
+We base our method on the analysis of the eigenvalues $\lambda_1$,
+$\lambda_2$ and  $\lambda_3$ of the velocity shear tensor $\Sigma _{\alpha\beta} = -\frac{1}{2 H_0} \left( \frac{\partial v_{\alpha}}{\partial
   x_{\beta}} + \frac{\partial v_{\beta}}{\partial x_{\alpha}}
-\right)$.
+\right)$ (Hoffman et al. 2012).
 
 From these eigenvalues we compute the fractional anisotropy
 (FA):
@@ -95,20 +96,23 @@ From these eigenvalues we compute the fractional anisotropy
    \left( \lambda_2 - \lambda_3 \right)^2 + \left( \lambda_1 - \lambda_2 \right)^2 
    )}{\lambda^{2}_1 + \lambda^{2}_2 + \lambda^{2}_3}},
 \end{equation}
-which tells us if a collapse or expansion is anisotropic (FA=1) or
+which tells us whether a local collapse/expansion is anisotropic (FA=1) or
 isotropic (FA=0).
 
 We find regions with a negative velocity divergence below a
 certain threshold of fractional anisotropy.
 Figure
-\ref{fig:simple} summarizes our results. Namely, Laniakea is atypically larger than the detected
-superclusters and our method is robust as the largest regions are detected independently of the
-FA thresholds and modifying the grid size in the interpolation do not influence our
-results.
+\ref{fig:simple} shows the number of superclusters with a given volumne.
+Different curves correspond to different parameters in our
+supercluster finding method. The first result is that large volume
+superclusters are robust to changes in the algorithm.
+The main result is that Laniakea is atypically larger than the
+superclusters in our simulation. 
+
 \begin{figure}[!t]
-  \includegraphics[width=\columnwidth]{SDHernandezSTDivJFig1}
-  \caption{Distributions of volumes for different seed FA thresholds.
-}
+  \includegraphics[width=\columnwidth]{SDHernandez_Final_Fig1}
+  \caption{Abundances of superclusters with different volumes for
+    different parameters in our algorithm.}
   \label{fig:simple}
 \end{figure}
 
@@ -121,8 +125,6 @@ results.
 \bibitem{2} Yehuda Hoffman, Ofer Metuki, Gustavo Yepes, Stefan Gottlöber, Jaime E. Forero-Romero, Noam I. Libeskind and Alexander Knebe. 
 {\em A kinematic classification of the cosmic web}, Monthly Notices of the Royal Astronomical Society, 425: 2049–2057, August 2012
 
-\bibitem{3} Noam I. Libeskind, Yehuda Hoffma, Jaime E. Forero-Romero, Stefan Gottlöber, Alexander Knebe, Matthias Steinmetz and Anatoly Klypin. 
-{\em The velocity shear tensor: tracer of halo alignment}, Monthly Notices of the Royal Astronomical Societ, 428 (3):2489-2499, January 2013
   
 \end{thebibliography}
 
